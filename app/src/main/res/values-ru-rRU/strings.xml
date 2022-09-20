@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ШИФТ</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="name">Имя</string>
+    <string name="second_name">Фамилия</string>
+    <string name="trafaret">xx.xx.xxxx</string>
+    <string name="password">Пароль</string>
+    <string name="registration">Регистрация</string>
+</resources>
