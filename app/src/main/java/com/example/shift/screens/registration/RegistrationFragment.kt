@@ -39,9 +39,9 @@ class RegistrationFragment : Fragment() {
         viewModelRegistration.correctName.observe(viewLifecycleOwner){
             when (viewModelRegistration.correctName.value) {
                 false -> {
-                    binding.textViewName.backgroundTintList = resources.getColorStateList(R.color.text_red)
+                    binding.textViewName.backgroundTintList = AppCompatResources.getColorStateList(requireContext(), R.color.text_red)
                 }else -> {
-                    binding.textViewName.backgroundTintList = resources.getColorStateList(R.color.text_blue)
+                    binding.textViewName.backgroundTintList = AppCompatResources.getColorStateList(requireContext(), R.color.text_blue)
                 }
             }
         }
@@ -50,9 +50,9 @@ class RegistrationFragment : Fragment() {
         viewModelRegistration.correctSecondName.observe(viewLifecycleOwner){
             when (viewModelRegistration.correctSecondName.value){
                 false -> {
-                    binding.textViewSecondName.backgroundTintList = resources.getColorStateList(R.color.text_red)
+                    binding.textViewSecondName.backgroundTintList = AppCompatResources.getColorStateList(requireContext(), R.color.text_red)
                 }else -> {
-                    binding.textViewSecondName.backgroundTintList = resources.getColorStateList(R.color.text_blue)
+                    binding.textViewSecondName.backgroundTintList = AppCompatResources.getColorStateList(requireContext(), R.color.text_blue)
                 }
             }
         }
@@ -60,9 +60,9 @@ class RegistrationFragment : Fragment() {
         viewModelRegistration.correctDateOfBirthday.observe(viewLifecycleOwner){
             when (viewModelRegistration.correctDateOfBirthday.value){
                 false ->{
-                    binding.editTextDate.backgroundTintList = resources.getColorStateList(R.color.text_red)
+                    binding.editTextDate.backgroundTintList = AppCompatResources.getColorStateList(requireContext(), R.color.text_red)
                 }else->{
-                    binding.editTextDate.backgroundTintList = resources.getColorStateList(R.color.text_blue)
+                    binding.editTextDate.backgroundTintList = AppCompatResources.getColorStateList(requireContext(), R.color.text_blue)
                 }
             }
         }
@@ -70,18 +70,18 @@ class RegistrationFragment : Fragment() {
         viewModelRegistration.correctPassword.observe(viewLifecycleOwner){
             when (viewModelRegistration.correctPassword.value){
                 false ->{
-                    binding.editTextPassword.backgroundTintList = resources.getColorStateList(R.color.text_red)
+                    binding.editTextPassword.backgroundTintList = AppCompatResources.getColorStateList(requireContext(), R.color.text_red)
                 }else ->{
-                    binding.editTextPassword.backgroundTintList = resources.getColorStateList(R.color.text_blue)
+                    binding.editTextPassword.backgroundTintList = AppCompatResources.getColorStateList(requireContext(), R.color.text_blue)
                 }
             }
         }
         viewModelRegistration.matchingPassword.observe(viewLifecycleOwner){
             when (viewModelRegistration.matchingPassword.value){
                 false ->{
-                    binding.editTextCheckPassword.backgroundTintList = resources.getColorStateList(R.color.text_red)
+                    binding.editTextCheckPassword.backgroundTintList = AppCompatResources.getColorStateList(requireContext(), R.color.text_red)
                 }else ->{
-                    binding.editTextCheckPassword.backgroundTintList = resources.getColorStateList(R.color.text_blue)
+                    binding.editTextCheckPassword.backgroundTintList = AppCompatResources.getColorStateList(requireContext(), R.color.text_blue)
                 }
             }
         }
